@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace ApiProjetoFinalAtos.DataModels;
 
@@ -17,5 +18,6 @@ public partial class Produto
 
     public virtual Categoria? FkCategoriaNavigation { get; set; }
 
+    [JsonIgnore]
     public virtual ICollection<ItensPedido> ItensPedidos { get; set; } = new List<ItensPedido>();
 }
