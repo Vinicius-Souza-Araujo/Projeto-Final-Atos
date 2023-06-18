@@ -7,6 +7,7 @@
 
 
 # Projeto-Final-Atos
+> Status do Projeto: Em andamento...
 
 ## Sobre o Projeto:
 O projeto OrderChef tem como objetivo facilitar e agilizar o processo de comunicação entre o garçom e o cozinheiro, melhorando a eficiência e a experiência do cliente. Nesse projeto, são desenvolvidas telas para o garçom e o cozinheiro, cada uma com suas funcionalidades específicas.
@@ -18,3 +19,4 @@ O projeto OrderChef tem como objetivo facilitar e agilizar o processo de comunic
   - A tela do cozinheiro é projetada para facilitar a visualização dos pedidos recebidos e organizar o fluxo de trabalho na cozinha.
   - Exibe os pedidos recebidos, permitindo que o cozinheiro veja todos os detalhes, incluindo os itens solicitados e a quantidade desejada.
   - Após preparar um prato, o cozinheiro pode marcar o pedido como concluído, para que o garçom seja notificado e possa buscar os pratos.
+  - O cozinheiro pode ter acesso a funcionalidade de cadastro de novos produtos e categorias.
