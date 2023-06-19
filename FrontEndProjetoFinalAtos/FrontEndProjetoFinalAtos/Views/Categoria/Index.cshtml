@@ -1,0 +1,124 @@
+﻿@using FrontEndProjetoFinalAtos.ViewsModels;
+@model CategoriaViewModel
+
+@{
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="~/css/Categoria/categoria.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+    <h1>Cadastrar <span id="destaque-titulo">Categoria</span></h1>
+
+    <form method="post" asp-action="CadastrarCategoria">
+
+        <div id="form-box-categoria">
+            <label for="categoria">Nome da Categoria: </label>
+            <input type="text" asp-for="Categoria.Nome" id="categoria" required>
+        </div>
+
+        <button type="submit" id="button-confirmar">Confirmar</button>
+    </form>
+
+    <div id="box-crud-categoria">
+        <div id="box-button-status">
+
+             <form method="get" asp-action="Index">
+                <button class="button-padrao">Todos</button>
+                
+            </form>
+
+            <form method="get" asp-action="BuscarAtivas">
+                <button class="button-padrao">Ativos</button>
+                
+            </form>
+
+            <form method="get" asp-action="BuscarInativas">
+                <button class="button-padrao">Inativos</button>
+            </form>
+        </div>
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Ações</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var categoria in Model.Categorias)
+                {
+
+                <tr>
+                        <th scope="row" id="id">@categoria.Id</th>
+                    <td id="nome">@categoria.Nome</td>
+                        <td id="status">
+                            @(categoria.Ativo == true ? "Ativo" : "Inativo") 
+                       </td>
+                        <td><button onclick="atualizarCategoria('@categoria.Id', '@categoria.Nome', '@categoria.Ativo')" data-bs-toggle="modal" data-bs-target="#exampleModal" class="button-padrao">Alterar</button></td>
+                </tr>
+                    
+                }
+               
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Alterar categoria: <span id="titulo-id"></span></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form method="post" asp-action="AtualizarCategoria">
+                    <div class="modal-body">
+                        
+
+                        <input type="hidden" asp-for="Categoria.Id" id="inputId"/>
+                        <input asp-for="Categoria.Nome" id="inputNome" required/>
+                        <select asp-for="Categoria.Ativo" id="inputStatus" required>
+
+                                <option value="true">Ativo</option>
+                                <option value="false">Inativo</option>
+                        
+                    
+                        </select>
+                    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+
+                    
+                        <button type="submit" class="btn btn-primary">Atualizar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/Categoria/categoria.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

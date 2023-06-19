@@ -49,6 +49,7 @@ namespace ApiProjetoFinalAtos.Controllers
 
             try
             {
+                categoria.Nome = categoria.Nome.ToLower();
                 await contexto.Categorias.AddAsync(categoria);
                 await contexto.SaveChangesAsync();
                 return Created($"categoriacontroller/categorias/{categoria.Id}", categoria);
@@ -66,7 +67,7 @@ namespace ApiProjetoFinalAtos.Controllers
             {
                 return BadRequest("Model inválida!");
             }
-
+            categoria.Nome = categoria.Nome.ToLower();
             var c = await contexto.Categorias.FirstOrDefaultAsync(c => c.Id == id);
 
             if (c == null)

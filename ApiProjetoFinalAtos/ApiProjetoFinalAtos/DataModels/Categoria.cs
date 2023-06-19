@@ -12,6 +12,7 @@ public partial class Categoria
 
     public bool? Ativo { get; set; }
 
+    
     [JsonIgnore]
     public virtual ICollection<Produto> Produtos { get; set; } = new List<Produto>();
 }
