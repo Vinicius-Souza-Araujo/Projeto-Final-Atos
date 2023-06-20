@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\STADS\\source\\repos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos.csproj": {}
+    "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\STADS\\source\\repos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos.csproj": {
+    "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\STADS\\source\\repos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos.csproj",
+        "projectUniqueName": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos.csproj",
         "projectName": "FrontEndProjetoFinalAtos",
-        "projectPath": "C:\\Users\\STADS\\source\\repos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos.csproj",
+        "projectPath": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos.csproj",
         "packagesPath": "C:\\Users\\STADS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\STADS\\source\\repos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\obj\\",
+        "outputPath": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

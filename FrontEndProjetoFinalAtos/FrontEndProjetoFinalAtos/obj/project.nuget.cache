@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wqyjmRi2aW/eRsNt70z+dPaspS/NyC9TseQ7CCJOSG6pnFCD4pbRC6TvfTYbiDoE+WCGM093HLzKzCWmL16LMw==",
+  "dgSpecHash": "rhLYxbMD460iai7h6AIse5hoON0ucd5qj+78ODP9oDxB7CFd2gye+cHwGG+jN9lRY+fXxz22uVCFGWTA27CcYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\STADS\\source\\repos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos.csproj",
+  "projectFilePath": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\STADS\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
