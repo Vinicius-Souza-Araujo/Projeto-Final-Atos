@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ApiProjetoFinalAtos.DataModels;
 
 public partial class ItensPedido
 {
+
     public int Id { get; set; }
 
     public int? FkPedido { get; set; }

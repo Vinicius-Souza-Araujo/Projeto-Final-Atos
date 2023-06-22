@@ -17,14 +17,14 @@ namespace ApiProjetoFinalAtos.Controllers
 
         }
 
-        [HttpGet("produtos/ativas")]
+        [HttpGet("produtos/ativos")]
         public async Task<IActionResult> getActiveProductsAsync([FromServices] ProjetoFinalContext contexto)
         {
             var produtosAtivos = await contexto.Produtos.AsNoTracking().Where(p => p.Ativo == true).Include(p => p.FkCategoriaNavigation).ToListAsync();
             return produtosAtivos == null ? NotFound() : Ok(produtosAtivos);
         }
 
-        [HttpGet("produtos/inativas")]
+        [HttpGet("produtos/inativos")]
         public async Task<IActionResult> getInactiveProductsAsync([FromServices] ProjetoFinalContext contexto)
         {
             var produtosInativos = await contexto.Produtos.AsNoTracking().Where(p => p.Ativo == false).Include(p => p.FkCategoriaNavigation).ToListAsync();
@@ -32,25 +32,16 @@ namespace ApiProjetoFinalAtos.Controllers
         }
 
         [HttpPost("produtos")]
-        public async Task<IActionResult> PostAsync([FromServices] ProjetoFinalContext contexto, [FromBody] Produto produto, [FromQuery] string nomeCategoria)
+        public async Task<IActionResult> PostAsync([FromServices] ProjetoFinalContext contexto, [FromBody] Produto produto)
         {
             if (produto == null)
             {
                 return BadRequest();
             }
 
-            var categoria = await contexto.Categorias.FirstOrDefaultAsync(c => c.Nome == nomeCategoria);
-
-            if (categoria == null)
-            {
-                return BadRequest("A categoria informada não existe.");
-            }
-
-            produto.FkCategoria = categoria.Id;
-            produto.FkCategoriaNavigation = categoria;
-
             try
             {
+                produto.Nome = produto.Nome.ToLower();
                 await contexto.Produtos.AddAsync(produto);
                 await contexto.SaveChangesAsync();
                 return Ok();
@@ -62,19 +53,14 @@ namespace ApiProjetoFinalAtos.Controllers
         }
 
         [HttpPut("produtos/{id}")]
-        public async Task<IActionResult> PutAsync([FromServices] ProjetoFinalContext contexto, [FromBody] Produto produto, [FromRoute] int id, [FromQuery] string nomeCategoria)
+        public async Task<IActionResult> PutAsync([FromServices] ProjetoFinalContext contexto, [FromBody] Produto produto, [FromRoute] int id)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest("Model inválida!");
             }
 
-            var categoria = await contexto.Categorias.FirstOrDefaultAsync(c => c.Nome == nomeCategoria);
-
-            if (categoria == null)
-            {
-                return BadRequest("A categoria informada não existe.");
-            }
+           
 
             var p = await contexto.Produtos.FirstOrDefaultAsync(p => p.Id == id);
 
@@ -86,11 +72,11 @@ namespace ApiProjetoFinalAtos.Controllers
 
             try
             {
-                p.Nome = produto.Nome;
+                p.Nome = produto.Nome.ToLower();
                 p.Valor = produto.Valor;
                 p.Ativo = produto.Ativo;
-                p.FkCategoria = categoria.Id;
-                p.FkCategoriaNavigation = categoria;
+                p.FkCategoria = produto.FkCategoria;
+               
 
                 contexto.Produtos.Update(p);
                 await contexto.SaveChangesAsync();

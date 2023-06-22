@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\js\\Categoria\\categoria.js"
     },
     {
+      "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\Produto\\produto.js",
+      "PackagePath": "staticwebassets\\js\\Produto\\produto.js"
+    },
+    {
       "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

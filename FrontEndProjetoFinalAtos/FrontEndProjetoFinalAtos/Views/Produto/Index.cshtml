@@ -1,4 +1,7 @@
-﻿@{
+﻿@using FrontEndProjetoFinalAtos.ViewsModels;
+@model ProdutoViewModel
+
+@{
 
     Layout = null;
 }
@@ -23,31 +26,35 @@
 
     <h1>Cadastrar <span id="destaque-titulo">Produto</span></h1>
 
-    <form method="post" asp-action="">
+    <form method="post" asp-action="CadastrarProduto">
 
         
         <div id="box-inputs-nome-preco">
             <div id="box-input-produto">
                 <label for="produto">Nome do Produto: </label>
-                <input class="inputs" type="text" id="produto" required>
+                <input asp-for="Produto.Nome" class="inputs" type="text" id="produto" required>
             </div>
 
             <div id="box-input-preco">
                 <label for="preco">Preço: </label>
-                <input class="inputs" type="number" id="preco" required>
+                <input asp-for="Produto.Valor" class="inputs" type="text" id="preco" required>
             </div>
         </div>
-
+        
 
         <div id="box-select">
             <label for="categoria">Categoria: </label>
-            <select id="select-categoria" name="categoria">
-                <option value="opcao1">Opção 1</option>
-                <option value="opcao2">Opção 2</option>
+            <select asp-for="Produto.FkCategoria" class="inputs" name="Produto.FkCategoria">
+                @foreach(var categoria in Model.Categorias)
+                {
+                <option value="@categoria.Id">@categoria.Nome</option>
+                }
             </select>
         </div>
 
         <button type="submit" id="button-confirmar">Confirmar</button>
+
+
     </form>
 
         <div id="box-crud-produto">
@@ -58,12 +65,12 @@
 
                 </form>
 
-                <form method="get" asp-action="BuscarAtivas">
+                <form method="get" asp-action="BuscarAtivos">
                     <button class="button-padrao">Ativos</button>
 
                 </form>
 
-                <form method="get" asp-action="BuscarInativas">
+                <form method="get" asp-action="BuscarInativos">
                     <button class="button-padrao">Inativos</button>
                 </form>
            </div>
@@ -83,14 +90,19 @@
             </thead>
 
             <tbody>
-                 <tr>
-                     <td id="nome">1</td>
-                     <td id="nome">Nome</td>
-                     <td id="preco">5.00</td>
-                     <td id="categoria">Comida</td>
-                     <td id="status">Ativo</td>
-                     <td><button onclick="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="button-padrao">Alterar</button></td>
+
+                @foreach(var produto in Model.Produtos)
+                {
+                <tr>
+                     <td id="id">@produto.Id</td>
+                     <td id="nome">@produto.Nome</td>
+                     <td id="preco">@produto.Valor</td>
+                     <td id="categoria">@produto.FkCategoriaNavigation.Nome</td>
+                     <td id="status">@(produto.Ativo == true ? "Ativo" : "Inativo")</td>
+                        <td><button onclick="atualizarProduto('@produto.Id','@produto.Nome','@produto.Valor','@produto.FkCategoriaNavigation.Id','@produto.Ativo')" data-bs-toggle="modal" data-bs-target="#exampleModal" class="button-padrao">Alterar</button></td>
                  </tr>
+
+                }
             </tbody>
 
         </table>
@@ -103,68 +115,67 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Alterar categoria: <span id="titulo-id"></span></h5>
+                <div class="box-modal-header">
+                    <h5 class="modal-titulo">ALTERAR<span id="titulo-id"></span></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form method="post" asp-action="AtualizarCategoria">
-                    <div class="modal-body">
+                <form method="post" asp-action="AtualizarProduto">
+                    <div class="box-modal-body">
+                        
+                        <input asp-for="Produto.Id" type="hidden" id="inputId" />
+                        <label for="produto">Produto: </label>
+                        <input asp-for="Produto.Nome" id="inputNome" type="text" class="inputs" required />
+
+                        <label for="preco">Preço: </label>
+                        <input asp-for="Produto.Valor" id="inputPreco" class="inputs" required />
                         
 
-                        <input type="hidden"  id="inputId"/>
-                        <input id="inputNome" required/>
-                        <select id="inputStatus" required>
-
-                                <option value="true">Ativo</option>
-                                <option value="false">Inativo</option>
-                        
-                    
+                        <label for="categoria">Categoria: </label>
+                        <select asp-for="Produto.FkCategoria" id="selectCategoria" class="inputs" asp-for="Produto.FkCategoria" name="Produto.FkCategoria">
+                            @foreach (var categoria in Model.Categorias)
+                            {
+                                <option value="@categoria.Id">@categoria.Nome</option>
+                            }
                         </select>
-                    
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-
-                    
-                        <button type="submit" class="btn btn-primary">Atualizar</button>
-                    </form>
-                </div>
-            </div>
-    </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Alterar categoria: <span id="titulo-id"></span></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <form method="post" asp-action="AtualizarCategoria">
-                    <div class="modal-body">
-
-
-                        <input type="hidden"  id="inputId" />
-                        <input  id="inputNome" required />
-                        <select  id="inputStatus" required>
+                        <label for="status">Status: </label>
+                        <select asp-for="Produto.Ativo" id="selectStatus" class="inputs" required>
 
                             <option value="true">Ativo</option>
                             <option value="false">Inativo</option>
 
 
                         </select>
-
+                    
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <div class="box-modal-footer">
+                        <button type="button" class="button-cancelar-modal" data-bs-dismiss="modal">Cancelar</button>
 
 
-
-                        <button type="submit" class="btn btn-primary">Atualizar</button>
-                </form>
+                        
+                        <button type="submit" class="button-confirmar-modal">Confirmar</button>
+                    </form>
+                </div>
             </div>
-        </div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if (typeof $ === 'undefined') {
+                console.log('Erro: jQuery não está sendo carregado corretamente.');
+            } else {
+                console.log('jQuery carregado com sucesso.');
+                $('#preco').mask('#.##0,00', { reverse: true });
+                $('#inputPreco').mask('#.##0,00', { reverse: true });
+            }
+        });
+    </script>
+
+    <script src="~/js/Produto/produto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   
 </body>
 </html>

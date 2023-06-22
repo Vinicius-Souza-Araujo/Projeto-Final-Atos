@@ -30,7 +30,7 @@
 
         <div id="form-box-categoria">
             <label for="categoria">Nome da Categoria: </label>
-            <input type="text" asp-for="Categoria.Nome" id="categoria" required>
+            <input class="inputs" type="text" asp-for="Categoria.Nome" id="categoria" required>
         </div>
 
         <button type="submit" id="button-confirmar">Confirmar</button>
@@ -87,31 +87,35 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Alterar categoria: <span id="titulo-id"></span></h5>
+                <div class="box-modal-header">
+                    <h5 class="modal-titulo">ALTERAR</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <form method="post" asp-action="AtualizarCategoria">
-                    <div class="modal-body">
+                    <div class="box-modal-body">
                         
 
                         <input type="hidden" asp-for="Categoria.Id" id="inputId"/>
-                        <input asp-for="Categoria.Nome" id="inputNome" required/>
-                        <select asp-for="Categoria.Ativo" id="inputStatus" required>
+                        <input class="inputs" asp-for="Categoria.Nome" id="inputNome" required />
 
-                                <option value="true">Ativo</option>
+
+                        <select id="selectStatus"  class="inputs" asp-for="Categoria.Ativo" required>
+
+                                <option selected value="true">Ativo</option>
                                 <option value="false">Inativo</option>
                         
                     
                         </select>
+
+                        
                     
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <div class="box-modal-footer">
+                        <button type="button" class="button-cancelar-modal" data-bs-dismiss="modal">Cancelar</button>
 
 
                     
-                        <button type="submit" class="btn btn-primary">Atualizar</button>
+                        <button type="submit" class="button-confirmar-modal">Atualizar</button>
                     </form>
                 </div>
             </div>

@@ -38,20 +38,11 @@
     }
 
     label {
-        color: #7C7C7C;
+        color: #FFFFFF;
         font-family: 'Inter', sans-serif;
     }
 
-    #select-categoria {
-
-        width: 100%;
-        background-color: #353434;
-        border: none;
-        border-radius: 5px;
-        height: 30px;
-        margin-bottom: 20px;
-        color: #FFFFFF;
-    }
+ 
 
     .inputs {
         background-color: #353434;
@@ -82,6 +73,7 @@
     #box-inputs-nome-preco {
         display: flex;
         gap: 20px;
+        flex-wrap:wrap;
     }
 
 
@@ -107,10 +99,81 @@
         font-weight: 700;
     }
 
-    .button-padrao:active {
-        background-color: #000;
-        color: #FCC236;
-    }
+.button-confirmar-modal {
+    width: 90px;
+    background-color: #FCC236;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    font-weight: 700;
+}
+
+.button-confirmar-modal:active {
+    background-color: #000;
+    color: #FCC236;
+}
+    .button-cancelar-modal{
+    width: 90px;
+    background-color: #FFEE82;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    font-weight: 700;
+
+}
+
+.button-cancelar-modal:active {
+    background-color: #000;
+    color: #FCC236;
+}
+    .modal-titulo {
+    color: #FCC236;
+    display: inline;
+    padding-left: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size:30px
+}
+
+.box-modal-header {
+    padding:30px;
+    background-color: #313131;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.box-modal-body {
+    background-color: #313131;
+    width: 100%;
+    padding: 30px;
+    padding-left: 60px;
+    padding-right:60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-modal-footer {
+    width: 100%;
+    padding: 30px;
+    padding-left: 60px;
+    background-color: #313131;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.button-padrao:active {
+    background-color: #000;
+    color: #FCC236;
+}
 
     #button-confirmar:active {
         background-color: #000;
@@ -122,15 +185,24 @@
     text-align: center;
     margin-top: 10px;
     background-color: #353434;
-    width: 350px;
+    width: 750px;
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 40px;
+    padding-top: 50px;
     padding-bottom: 40px;
     border-radius: 5px;
     margin-bottom: 50px;
+}
+
+thead th {
+    font-weight: bold;
+}
+
+th {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 
@@ -150,4 +222,48 @@
 
 td {
     padding: 10px;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .tabela {
+        text-align: center;
+        margin-top: 10px;
+        background-color: #353434;
+        width: 100px;
+        color: #FFFFFF;
+        font-family: 'Inter', sans-serif;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-radius: 5px;
+        margin-bottom: 50px;
+    }
+
+    .inputs {
+        width: 270px;
+        background-color: #353434;
+        border: none;
+        border-radius: 5px;
+        height: 30px;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+    }
+
+
+    #box-inputs-nome-preco {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    th {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 }

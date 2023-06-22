@@ -2,13 +2,19 @@
 
     var inputId = document.getElementById("inputId");
     var inputNome = document.getElementById("inputNome");
-    var inputStatus = document.getElementById("inputStatus");
-    var tituloid = document.getElementById("titulo-id");
+    var inputStatus = document.getElementById("selectStatus");
     
     inputId.value = id;
     inputNome.value = nome;
-    inputStatus.value = status;
-    tituloid.innerHTML = id;
+   
+    for (var i = 0; i < inputStatus.options.length; i++) {
+        var option = inputStatus.options[i];
 
+        if (option.value.toLowerCase() === status.toString().toLowerCase()) {
+            inputStatus.selectedIndex = i;
+            break;
+        }
+    }
+   
     
 }
