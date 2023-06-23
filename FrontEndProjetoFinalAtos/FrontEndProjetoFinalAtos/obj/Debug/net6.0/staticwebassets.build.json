@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NSH2c6lChKnuY0yja/soEr0g7bvS+2B5QbZUhiAOBrE=",
+  "Hash": "wA/pcWKDf+xRtgvJyR9Vxu3zkmkDTOxTbwV2aTwvtJ8=",
   "Source": "FrontEndProjetoFinalAtos",
   "BasePath": "_content/FrontEndProjetoFinalAtos",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FrontEndProjetoFinalAtos.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\css\\AbrirMesa\\abrir-mesa.css",
+      "SourceId": "FrontEndProjetoFinalAtos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\",
+      "BasePath": "_content/FrontEndProjetoFinalAtos",
+      "RelativePath": "css/AbrirMesa/abrir-mesa.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AbrirMesa\\abrir-mesa.css"
     },
     {
       "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\css\\Categoria\\categoria.css",
@@ -119,6 +136,40 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\icone-adicionar.svg",
+      "SourceId": "FrontEndProjetoFinalAtos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\",
+      "BasePath": "_content/FrontEndProjetoFinalAtos",
+      "RelativePath": "img/icone-adicionar.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icone-adicionar.svg"
+    },
+    {
+      "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\icone-excluir.svg",
+      "SourceId": "FrontEndProjetoFinalAtos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\",
+      "BasePath": "_content/FrontEndProjetoFinalAtos",
+      "RelativePath": "img/icone-excluir.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icone-excluir.svg"
+    },
+    {
       "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\Categoria\\categoria.js",
       "SourceId": "FrontEndProjetoFinalAtos",
       "SourceType": "Discovered",
@@ -134,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Categoria\\categoria.js"
+    },
+    {
+      "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\Pedido\\abrir-mesa.js",
+      "SourceId": "FrontEndProjetoFinalAtos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\",
+      "BasePath": "_content/FrontEndProjetoFinalAtos",
+      "RelativePath": "js/Pedido/abrir-mesa.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Pedido\\abrir-mesa.js"
     },
     {
       "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\Produto\\produto.js",

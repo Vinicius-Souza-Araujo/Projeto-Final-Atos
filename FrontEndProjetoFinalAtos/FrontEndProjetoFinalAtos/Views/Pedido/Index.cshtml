@@ -1,0 +1,77 @@
+﻿@using FrontEndProjetoFinalAtos.ViewsModels;
+@model PedidoViewModel
+@{
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="~/css/AbrirMesa/abrir-mesa.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <form>
+        <h1>ABRIR MESA</h1>
+       
+        <div class="box-inputs">
+            <input class="inputs" type="text" name="cliente" id="inputCliente" placeholder="cliente">
+            <input id="inputMesa" class="inputs" type="number" placeholder="Mesa">
+        </div>
+
+
+        <input id="inputId" class="inputs" type="hidden" placeholder="ID" value="">
+
+        <div class="box-inputs">
+                <select class="inputs" name="selectProduto" id="selectProduto">
+                @foreach (var produto in Model.Produtos)
+                {
+                <option value="@produto.Id">@produto.Nome</option>
+               
+                }
+            </select>
+                <input name="inputQuantidade" id="inputQuantidade" class="inputs" type="number" placeholder="Qtd">
+
+        </div>
+
+
+        <button type="button" onclick="adicionarPessoa()" id="button-adicionar"><img id="img-adicionar" alt="icone-adicionar" src="~/img/icone-adicionar.svg"></button>
+       
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+               
+            </tbody>
+        </table>
+       
+       
+
+
+        <div id="box-button-padrao">
+            <button type="button" class="button-padrao">Cancelar</button>
+            <button id="button-confirmar" onclick="enviarDadosParaController()" type="button" class="button-padrao" disabled>Confirmar</button>
+        </div>
+    </form>
+
+
+    <script src="~/js/Pedido/abrir-mesa.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>

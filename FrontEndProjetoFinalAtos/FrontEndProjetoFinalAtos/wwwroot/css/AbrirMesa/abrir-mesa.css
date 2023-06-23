@@ -1,0 +1,162 @@
+﻿body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F1F1F;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 50px;
+}
+
+
+h1 {
+    color: #F7CC5B;
+}
+
+.box-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+
+.inputs {
+    background-color: #353434;
+    width: 320px;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    color: #FFFFFF;
+}
+
+#button-adicionar {
+    background-color: #E1AC23;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+    #button-adicionar:active {
+        background-color: #000;
+    }
+
+#img-adicionar {
+    width: 20px;
+    height: 20px;
+
+}
+
+#box-button-padrao {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+
+}
+
+
+.button-padrao {
+    background-color: #FCC236;
+    border: none;
+    border-radius: 5px;
+    width: 90px;
+    height: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+    .button-padrao:active {
+        background-color: #000;
+        color: #FCC236;
+        
+    }
+
+    #tabela {
+        margin: 0 auto;
+        width: 100%;
+        font-family: 'Inter', sans-serif;
+        border-radius: 5px;
+        background-color: #353434;
+    }
+
+    #tabela button img{
+        width:25px
+    }
+
+    #tabela button {
+        border: none;
+        background-color: #353434;
+    }
+
+    th {
+    text-align: center;
+    background-color: #353434;
+    color: #fff;
+    padding: 10px;
+   
+    
+}
+
+tr{
+    
+  
+   margin-top:20px;
+
+
+}
+
+td {
+    text-align: center;
+    background-color: #353434;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .inputs {
+        background-color: #353434;
+        width: 180px;
+        border: none;
+        border-radius: 5px;
+        height: 30px;
+        color: #FFFFFF;
+    }
+
+    #inputMesa {
+        width: 70px;
+    }
+
+    #inputQuantidade {
+        width: 74px;
+    }
+
+    #button-adicionar {
+        background-color: #E1AC23;
+        border: none;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        width: 270px;
+    }
+
+    #tabela {
+        margin: 0 auto;
+        width: 270px;
+        font-family: 'Inter', sans-serif;
+        border-radius: 5px;
+        background-color: #353434;
+    }
+}
