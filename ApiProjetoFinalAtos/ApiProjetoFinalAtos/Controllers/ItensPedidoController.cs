@@ -14,31 +14,16 @@ namespace ApiProjetoFinalAtos.Controllers
             var itensPedidos = await contexto.ItensPedidos.Include(p => p.FkProdutoNavigation).AsNoTracking().ToListAsync();
 
 
-            //foreach(var item in itensPedidos)
-            //{
-               
-                
-            //    string sqlPedido = @$"select * from pedidos where id = {item.FkPedido}";
-            //    var pedido = await contexto.Pedidos.FromSqlRaw<Pedido>(sqlPedido).FirstOrDefaultAsync();
-            //    item.FkPedidoNavigation = pedido;
-                
-               
+            return itensPedidos == null ? NotFound() : Ok(itensPedidos);
+        }
 
-                
-
-            //}
-
-
-            
+        [HttpGet("itenspedidos/{id}")]
+        public async Task<IActionResult> getByIdPedidosAsync([FromServices] ProjetoFinalContext contexto, [FromRoute] int id)
+        {
+            var itensPedidos = await contexto.ItensPedidos.Include(p => p.FkProdutoNavigation).AsNoTracking().Where(p => p.FkPedido == id).ToListAsync();
 
 
             return itensPedidos == null ? NotFound() : Ok(itensPedidos);
         }
-
-        //[HttpPost("itenspedidos")]
-        //public async Task<IActionResult> PostAsync([FromServices] ProjetoFinalContext contexto, [FromBody] ItensPedido itensPedido, [FromQuery] string nomeProdudo)
-        //{
-
-        //}
     }
 }

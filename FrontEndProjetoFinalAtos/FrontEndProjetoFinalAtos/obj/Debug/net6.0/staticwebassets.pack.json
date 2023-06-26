@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\Categoria\\categoria.css"
     },
     {
+      "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\css\\PedidoCozinheiro\\pedido-cozinheiro.css",
+      "PackagePath": "staticwebassets\\css\\PedidoCozinheiro\\pedido-cozinheiro.css"
+    },
+    {
       "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\css\\Produto\\produto.css",
       "PackagePath": "staticwebassets\\css\\Produto\\produto.css"
     },
@@ -25,6 +29,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\Elipse.svg",
+      "PackagePath": "staticwebassets\\img\\Elipse.svg"
+    },
+    {
       "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\icone-adicionar.svg",
       "PackagePath": "staticwebassets\\img\\icone-adicionar.svg"
     },
@@ -35,6 +43,10 @@
     {
       "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\Categoria\\categoria.js",
       "PackagePath": "staticwebassets\\js\\Categoria\\categoria.js"
+    },
+    {
+      "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\PedidoCozinheiro\\pedido-cozinheiro.js",
+      "PackagePath": "staticwebassets\\js\\PedidoCozinheiro\\pedido-cozinheiro.js"
     },
     {
       "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\Pedido\\abrir-mesa.js",
