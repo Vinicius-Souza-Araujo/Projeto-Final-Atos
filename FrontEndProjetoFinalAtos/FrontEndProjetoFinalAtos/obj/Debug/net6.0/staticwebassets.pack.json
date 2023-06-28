@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\PedidoCozinheiro\\pedido-cozinheiro.css"
     },
     {
+      "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\css\\PedidoGarcom\\pedido-garcom.css",
+      "PackagePath": "staticwebassets\\css\\PedidoGarcom\\pedido-garcom.css"
+    },
+    {
       "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\css\\Produto\\produto.css",
       "PackagePath": "staticwebassets\\css\\Produto\\produto.css"
     },
@@ -33,6 +37,14 @@
       "PackagePath": "staticwebassets\\img\\Elipse.svg"
     },
     {
+      "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\chefe.svg",
+      "PackagePath": "staticwebassets\\img\\chefe.svg"
+    },
+    {
+      "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\icone-adicionar-branco.svg",
+      "PackagePath": "staticwebassets\\img\\icone-adicionar-branco.svg"
+    },
+    {
       "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\icone-adicionar.svg",
       "PackagePath": "staticwebassets\\img\\icone-adicionar.svg"
     },
@@ -41,12 +53,20 @@
       "PackagePath": "staticwebassets\\img\\icone-excluir.svg"
     },
     {
+      "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\menubar.svg",
+      "PackagePath": "staticwebassets\\img\\menubar.svg"
+    },
+    {
       "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\Categoria\\categoria.js",
       "PackagePath": "staticwebassets\\js\\Categoria\\categoria.js"
     },
     {
       "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\PedidoCozinheiro\\pedido-cozinheiro.js",
       "PackagePath": "staticwebassets\\js\\PedidoCozinheiro\\pedido-cozinheiro.js"
+    },
+    {
+      "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\PedidoGarcom\\pedido-garcom.js",
+      "PackagePath": "staticwebassets\\js\\PedidoGarcom\\pedido-garcom.js"
     },
     {
       "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\Pedido\\abrir-mesa.js",

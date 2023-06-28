@@ -77,7 +77,7 @@ namespace ApiProjetoFinalAtos.Controllers
 
             try
             {
-                c.Nome = categoria.Nome.ToLower(); ;
+                c.Nome = categoria.Nome.ToLower();
                 c.Ativo = categoria.Ativo;
                 contexto.Categorias.Update(c);
                 await contexto.SaveChangesAsync();

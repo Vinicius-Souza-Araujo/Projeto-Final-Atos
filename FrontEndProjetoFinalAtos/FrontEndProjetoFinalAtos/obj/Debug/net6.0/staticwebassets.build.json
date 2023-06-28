@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IV3dViWn+uwLYKmNPXZgpg6CF27LQPz+kJHyUkczn8k=",
+  "Hash": "9r70uQ+UC0bXaT6uxiIR6Edp0PHjkcgNOrXJMwBlIVU=",
   "Source": "FrontEndProjetoFinalAtos",
   "BasePath": "_content/FrontEndProjetoFinalAtos",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\css\\PedidoCozinheiro\\pedido-cozinheiro.css"
     },
     {
+      "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\css\\PedidoGarcom\\pedido-garcom.css",
+      "SourceId": "FrontEndProjetoFinalAtos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\",
+      "BasePath": "_content/FrontEndProjetoFinalAtos",
+      "RelativePath": "css/PedidoGarcom/pedido-garcom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\PedidoGarcom\\pedido-garcom.css"
+    },
+    {
       "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\css\\Produto\\produto.css",
       "SourceId": "FrontEndProjetoFinalAtos",
       "SourceType": "Discovered",
@@ -153,6 +170,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\chefe.svg",
+      "SourceId": "FrontEndProjetoFinalAtos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\",
+      "BasePath": "_content/FrontEndProjetoFinalAtos",
+      "RelativePath": "img/chefe.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\chefe.svg"
+    },
+    {
       "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\Elipse.svg",
       "SourceId": "FrontEndProjetoFinalAtos",
       "SourceType": "Discovered",
@@ -187,6 +221,23 @@
       "OriginalItemSpec": "wwwroot\\img\\icone-adicionar.svg"
     },
     {
+      "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\icone-adicionar-branco.svg",
+      "SourceId": "FrontEndProjetoFinalAtos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\",
+      "BasePath": "_content/FrontEndProjetoFinalAtos",
+      "RelativePath": "img/icone-adicionar-branco.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\icone-adicionar-branco.svg"
+    },
+    {
       "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\icone-excluir.svg",
       "SourceId": "FrontEndProjetoFinalAtos",
       "SourceType": "Discovered",
@@ -202,6 +253,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\icone-excluir.svg"
+    },
+    {
+      "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\menubar.svg",
+      "SourceId": "FrontEndProjetoFinalAtos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\",
+      "BasePath": "_content/FrontEndProjetoFinalAtos",
+      "RelativePath": "img/menubar.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\menubar.svg"
     },
     {
       "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\Categoria\\categoria.js",
@@ -253,6 +321,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\PedidoCozinheiro\\pedido-cozinheiro.js"
+    },
+    {
+      "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\PedidoGarcom\\pedido-garcom.js",
+      "SourceId": "FrontEndProjetoFinalAtos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\",
+      "BasePath": "_content/FrontEndProjetoFinalAtos",
+      "RelativePath": "js/PedidoGarcom/pedido-garcom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\PedidoGarcom\\pedido-garcom.js"
     },
     {
       "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\js\\Produto\\produto.js",

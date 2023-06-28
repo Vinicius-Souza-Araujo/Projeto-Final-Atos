@@ -25,29 +25,65 @@
 
 <body>
 
+    <nav  class=" navbar navbar-expand-lg">
+        <div id="box-nav"  class="container-fluid">
+            <a id="a-nav" class="navbar-brand" href="#"></a>
+            <button id="button-nav" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img id="img-nav" alt="menu" src="~/img/menubar.svg" />
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a id="a-nav" class="nav-link active" aria-current="page" asp-controller="Categoria" asp-action="Index">Categoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="a-nav" class="nav-link" asp-controller="Produto" asp-action="Index">Produto</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
 
     <div id="box-pedidos">
         <h1>PEDIDOS</h1>
 
-        <ul>
-            @if (Model.Pedidos  != null){
-            @foreach (var pedido in Model.Pedidos){
-            <li>
+        @if (Model.Pedidos != null && Model.Pedidos.Count > 0)
+        {
+            <ul id="ul-box-pedidos">
 
-                <p id="p-li">Mesa @pedido.Mesa</p>
+                @foreach (var pedido in Model.Pedidos)
+                {
+                    <li id="li-box-pedidos">
+
+                        <p id="p-li">Mesa @pedido.Mesa</p>
                         <button onclick="dadosModal(@pedido.Mesa,@pedido.Id)" class="button-detalhes" data-bs-toggle="modal" data-bs-target="#exampleModal">Detalhes</button>
-            </li>
-            }
-            }
+                    </li>
+                }
+                
+           
 
         </ul>
+        }
+
+        else
+        {
+
+            
+           
+            <p id="p-nenhumPedido">NENHUM PEDIDO NO MOMENTO.</p>
+            
+            
+        }
 
 
     </div>
 
 
 
-    <img src="~/img/Elipse.svg">
+    <img id="img-elipse" src="~/img/Elipse.svg">
 
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -57,11 +93,12 @@
                     <h5 class="modal-titulo">PEDIDO<span id="titulo-id"></span></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                
+
+                <form method="post" asp-action="AtualizarAndamento">
                     <div class="box-modal-body">
 
                         <p id="p-modal"></p>
-
+                        <input asp-for="Pedido.Id" id="id-pedido-modal" type="hidden" />
 
                     <ul id="lista-dados">
 
@@ -73,9 +110,10 @@
 
 
 
-                        <button type="submit" class="button-confirmar-modal">Confirmar</button>
+                        <button type="submit" class="button-preparado-modal">Pedido preparado</button>
               
-            </div>
+                    </div>
+                </form>
         </div>
     </div>
 

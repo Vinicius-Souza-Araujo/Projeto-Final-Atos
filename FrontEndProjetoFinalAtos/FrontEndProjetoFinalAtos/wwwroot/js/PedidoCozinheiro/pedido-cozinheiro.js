@@ -5,6 +5,7 @@
 function dadosModal(mesa, id) {
     
     document.getElementById('p-modal').textContent = "Mesa " + mesa;
+    document.getElementById('id-pedido-modal').value = id;
 
     $.ajax({
         url: '/PedidoCozinheiro/BuscarItensPedidos?id=' + id,

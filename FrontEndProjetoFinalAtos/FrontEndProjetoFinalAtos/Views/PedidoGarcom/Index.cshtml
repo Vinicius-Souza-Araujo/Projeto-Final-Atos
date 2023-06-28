@@ -1,0 +1,78 @@
+﻿@using FrontEndProjetoFinalAtos.ViewsModels;
+@model PedidoViewModel
+
+
+@{
+
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concluídos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="~/css/PedidoGarcom/pedido-garcom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <div id="box-pedidos">
+        <h1>CONCLUÍDOS</h1>
+
+        @if (Model.Pedidos != null && Model.Pedidos.Count > 0)
+        {
+            <ul>
+
+                @foreach (var pedido in Model.Pedidos)
+                {
+                    <li>
+
+                        <p id="p-li">Mesa @pedido.Mesa</p>
+                        <form method="post" asp-action="AtualizarAndamento">
+                            <input asp-for="@pedido.Id" id="id-pedido-modal" type="hidden" />
+                            <button  type="submit" class="button-finalizar">Finalizar</button>
+                        </form>
+
+                    </li>
+                }
+
+
+
+            </ul>
+        }
+
+        else
+        {
+
+
+
+            <p id="p-nenhumPedido">NENHUM PEDIDO NO MOMENTO.</p>
+
+
+        }
+
+
+    </div>
+
+
+    <a asp-controller="Pedido" asp-action="Index"><img id="icone-adicionar" src="~/img/icone-adicionar-branco.svg" alt="icone-adicionar"></a>
+    <img id="img-elipse" src="~/img/Elipse.svg">
+
+
+  
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/PedidoGarcom/pedido-garcom.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

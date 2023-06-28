@@ -58,5 +58,15 @@ namespace FrontEndProjetoFinalAtos.Controllers
             return Json(itens);
 
         }
+
+        public async Task<IActionResult> AtualizarAndamento(PedidoViewModel model)
+        {
+            Pedido pedido = new Pedido();
+            pedido.Andamento = "preparado";
+
+            HttpClient client = new HttpClient();
+            HttpResponseMessage respostaPut = await client.PutAsJsonAsync(BaseUrl + "pedidocontroller/pedidos/" + model.Pedido.Id, pedido);
+            return RedirectToAction("Index");
+        }
     }
 }

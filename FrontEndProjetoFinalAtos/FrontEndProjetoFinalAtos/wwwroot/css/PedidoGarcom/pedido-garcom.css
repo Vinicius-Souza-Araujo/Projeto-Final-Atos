@@ -1,35 +1,5 @@
 ﻿* {
     margin: 0px;
-
-}
-
-
-#a-nav {
-    color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
-}
-
-#a-nav:hover{
-    color: #FCC236;
-}
-
-nav {
-    width: 100vw;
-    background-color: #1F1F1F;
-    padding:0px;
-    margin:0px;
-}
-
-#img-nav{
-    width:20px;
-}
-
-#box-nav {
-    background-color: #1F1F1F;
-}
-
-a{
-    color:#FFFFFF;
 }
 
 body {
@@ -49,12 +19,36 @@ body {
     width: 100%;
     bottom: -150px;
 }
+#icone-adicionar{
+    width: 40px;
+    height:40px;
+}
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: #0A0A09;
+    position: fixed;
+    bottom: 40px;
+    left: 90%;
+    transform: translateX(-50%);
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    z-index: 2;
+}
+
+    a:active {
+        background-color: #E1AC23;
+    }
 
 #box-pedidos {
     position: absolute;
     position: relative;
     z-index: 1;
-    
 }
 
 h1 {
@@ -65,13 +59,13 @@ h1 {
     text-align: center;
 }
 
-#ul-box-pedidos {
+ul {
     list-style: none;
     padding: 0;
     margin-top: 40px;
 }
 
-#li-box-pedidos {
+li {
     font-family: 'Inter', sans-serif;
     color: #FFFFFF;
     display: flex;
@@ -98,8 +92,7 @@ h1 {
 #p-nenhumPedido {
     margin-top: 150px;
     font-size: 40px;
-    text-align:center;
-
+    text-align: center;
     color: #FFFFFF;
     font-family: 'Oswald', sans-serif;
 }
@@ -118,8 +111,6 @@ h1 {
 }
 
     #lista-dados li {
-        color: #FFFFFF;
-        font-family: 'Inter', sans-serif;
         background-color: #313131;
         padding-left: 0px;
         padding-right: 0px;
@@ -130,11 +121,12 @@ h1 {
         padding: 0px;
     }
 
-.button-detalhes {
+.button-finalizar {
+    font-weight:bold;
     text-align: center;
     border: none;
-    color: #FFFFFF;
-    background-color: #232322;
+    color: #000000;
+    background-color: #FFC93E;
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
@@ -142,9 +134,8 @@ h1 {
 }
 
 button:active {
-    background-color: #FCC236;
-    color: #232322;
-    
+    background-color: #232322;
+    color: #FFFFFF;
 }
 
 .button-preparado-modal {
@@ -158,10 +149,10 @@ button:active {
     font-weight: 700;
 }
 
-.button-preparado-modal:active {
-    background-color: #000;
-    color: #FCC236;
-}
+    .button-preparado-modal:active {
+        background-color: #000;
+        color: #FCC236;
+    }
 
 .button-cancelar-modal {
     width: 90px;
@@ -227,20 +218,48 @@ button:active {
         width: 100%;
         bottom: 0px;
     }
+
+
 }
 
 @media only screen and (max-width: 767px) {
-    #li-box-pedidos{
+    li {
         font-family: 'Inter', sans-serif;
         color: #FFFFFF;
         display: flex;
         align-items: center;
-        gap: 100px;
+        gap: 50px;
         background-color: #444444;
         padding: 10px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
         border-radius: 10px;
         margin-bottom: 20px;
+    }
+
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        color: #FCC236;
+        font-size: 40px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 60px;
+        border-radius: 5px;
+        background-color: #0A0A09;
+        position: fixed;
+        bottom: 30px;
+        left: 90%;
+        transform: translateX(-50%);
+        color: #FFFFFF;
+        font-size: 24px;
+        font-family: 'Inter', sans-serif;
+        z-index: 2;
     }
 }
