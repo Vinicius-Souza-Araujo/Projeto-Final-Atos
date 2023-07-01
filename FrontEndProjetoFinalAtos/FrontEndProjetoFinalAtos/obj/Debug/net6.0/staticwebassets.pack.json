@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\Categoria\\categoria.css"
     },
     {
+      "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\css\\Home\\home.css",
+      "PackagePath": "staticwebassets\\css\\Home\\home.css"
+    },
+    {
       "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\css\\PedidoCozinheiro\\pedido-cozinheiro.css",
       "PackagePath": "staticwebassets\\css\\PedidoCozinheiro\\pedido-cozinheiro.css"
     },
@@ -39,6 +43,10 @@
     {
       "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\chefe.svg",
       "PackagePath": "staticwebassets\\img\\chefe.svg"
+    },
+    {
+      "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\cozinha.png",
+      "PackagePath": "staticwebassets\\img\\cozinha.png"
     },
     {
       "Id": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\icone-adicionar-branco.svg",

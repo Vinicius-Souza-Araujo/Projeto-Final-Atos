@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9r70uQ+UC0bXaT6uxiIR6Edp0PHjkcgNOrXJMwBlIVU=",
+  "Hash": "xbCDbiUGTfCvOyYWaZsl8oHgR0MZvloI+YIUyziSX+w=",
   "Source": "FrontEndProjetoFinalAtos",
   "BasePath": "_content/FrontEndProjetoFinalAtos",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Categoria\\categoria.css"
+    },
+    {
+      "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\css\\Home\\home.css",
+      "SourceId": "FrontEndProjetoFinalAtos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\",
+      "BasePath": "_content/FrontEndProjetoFinalAtos",
+      "RelativePath": "css/Home/home.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Home\\home.css"
     },
     {
       "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\css\\PedidoCozinheiro\\pedido-cozinheiro.css",
@@ -185,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\chefe.svg"
+    },
+    {
+      "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\cozinha.png",
+      "SourceId": "FrontEndProjetoFinalAtos",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\",
+      "BasePath": "_content/FrontEndProjetoFinalAtos",
+      "RelativePath": "img/cozinha.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\cozinha.png"
     },
     {
       "Identity": "C:\\Users\\STADS\\source\\repos\\Projeto-Final-Atos\\FrontEndProjetoFinalAtos\\FrontEndProjetoFinalAtos\\wwwroot\\img\\Elipse.svg",

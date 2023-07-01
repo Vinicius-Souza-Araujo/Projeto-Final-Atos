@@ -176,3 +176,4 @@ C:\Users\STADS\source\repos\Projeto-Final-Atos\ApiProjetoFinalAtos\ApiProjetoFin
 C:\Users\STADS\source\repos\Projeto-Final-Atos\ApiProjetoFinalAtos\ApiProjetoFinalAtos\obj\Debug\net6.0\ApiProjetoFinalAtos.pdb
 C:\Users\STADS\source\repos\Projeto-Final-Atos\ApiProjetoFinalAtos\ApiProjetoFinalAtos\obj\Debug\net6.0\ApiProjetoFinalAtos.genruntimeconfig.cache
 C:\Users\STADS\source\repos\Projeto-Final-Atos\ApiProjetoFinalAtos\ApiProjetoFinalAtos\obj\Debug\net6.0\ref\ApiProjetoFinalAtos.dll
+C:\Users\STADS\source\repos\Projeto-Final-Atos\ApiProjetoFinalAtos\ApiProjetoFinalAtos\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

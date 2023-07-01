@@ -1,8 +1,43 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/Home/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="estrutura-login">
+        <div class="imagem">
+            <img class="img" src="~/img/cozinha.png" alt="imagem de pessoas reunidas na cozinha">
+        </div>
+
+        <div class="dados">
+            <h1 class="titulo">Bem-vindo!</h1>
+            <h2 class="subtitulo">Como deseja entrar?</h2>
+
+            <div class="butoes">
+                <a class="btn-cozinheiro" type="submit" asp-controller="PedidoCozinheiro" asp-action="Index">Cozinheiro</a>
+                <a asp-controller="PedidoGarcom" asp-action="Index" class="btn-garcom" type="submit">Garçom</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+
+
+</body>
+</html>
+
