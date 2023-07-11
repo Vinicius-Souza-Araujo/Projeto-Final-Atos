@@ -7,7 +7,7 @@
 
 
 # Projeto-Final-Atos
-> Status do Projeto: Em andamento...
+> Status do Projeto: :heavy_check_mark: (concluido)
 
 ## Sobre o Projeto:
 O projeto OrderChef tem como objetivo facilitar e agilizar o processo de comunicação entre o garçom e o cozinheiro, melhorando a eficiência e a experiência do cliente. Nesse projeto, são desenvolvidas telas para o garçom e o cozinheiro, cada uma com suas funcionalidades específicas.
